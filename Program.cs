@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoFinal.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Contexto>
+    (options => options.UseSqlServer("Data Source=SP-1491019\\SQLSENAI;Initial Catalog = ProjetoFinal; Integrated Security = True; TrustServerCertificate = True"));
+
 
 var app = builder.Build();
 
