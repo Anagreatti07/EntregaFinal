@@ -6,12 +6,12 @@ namespace ProjetoFinal.Models
     [Table("TipoProduto")]
     public class TipoProduto
     {
-        [Column("TipoProdutoId")]
+        [Column("Id")]
         [Display(Name = "Tipo Produto")]
         public int Id { get; set; }
 
         [Column("TipoProdutoDescricao")]
-        [Display(Name = "Descricao do Tipo Saida")]
+        [Display(Name = "Descricao do Tipo Produto")]
         public string TipoProdutoDescricao { get; set; } = string.Empty;
     }
 }

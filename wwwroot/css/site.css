@@ -14,5 +14,16 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #CCE9FF;
+}
+
+
+a {
+    color: #008AAD;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #3EC3DE;
 }
